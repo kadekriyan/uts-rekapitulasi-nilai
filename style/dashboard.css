@@ -1,0 +1,124 @@
+::after,
+::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    overflow: scroll;
+    transition: all 0.35s ease-in-out;
+    background-color: #fafbfe;
+}
+
+#sidebar {
+    width: 100px;
+    min-width: 100px;
+    z-index: 1000;
+    transition: all .25s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    background-color: #140330;
+}
+
+#sidebar.expand {
+    width: 260px;
+    min-width: 260px
+}
+
+#toggle-btn {
+    background-color: transparent;
+    cursor: pointer;
+    border: 0;
+    padding: 1rem 1.5rem;
+}
+.sidebar-header {
+    height: 125px;
+}
+.sidebar-profile {
+    margin-top: 2rem;
+    display: block;
+    text-align: start;
+}
+
+.sidebar-profile span {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    display: block;
+}
+.avatar {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+#sidebar:not(.expand) .sidebar-profile,
+#sidebar:not(.expand) a.sidebar-link span {
+    display: none;
+}
+
+.sidebar-nav {
+    justify-content: space-between;
+}
+.sidebar-nav {
+    padding: 4rem 0.5rem;
+    flex: 1 1 auto;
+}
+
+.sidebar-link {
+    padding: .625rem 1.625rem;
+    color: #fff;
+    display: block;
+    font-size: 1rem;
+    white-space: nowrap;
+    border-left: 3px solid transparent;
+}
+
+.sidebar-link i {
+    font-size: 1rem;
+    margin-right: .75rem;
+}
+
+a.sidebar-link:hover {
+    background-color: #818181;
+    border-left: 3px solid #fff;
+}
+
+
+/* main */
+.main {
+    padding: 0px 20px;
+}
+
+.jadwal {
+    width: 150px;
+}
+
+.table thead{
+    background-color: #818181;
+}
